@@ -22,10 +22,7 @@ export default function AuthScreen() {
   };
 
   return (
-    <KeyboardAvoidingView
-      className="flex-1 bg-gray-950"
-      behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-    >
+    <KeyboardAvoidingView className="flex-1 bg-gray-950" behavior="padding">
       <ScrollView
         contentContainerStyle={{ flexGrow: 1 }}
         keyboardShouldPersistTaps="handled"
