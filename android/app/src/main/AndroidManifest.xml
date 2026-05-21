@@ -22,6 +22,16 @@
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
+        <!-- Deep link: tectsoft-rn://item/<id> -->
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="tectsoft-rn" />
+            <data android:host="item" />
+            <data android:pathPattern="/.*" />
+        </intent-filter>
       </activity>
     </application>
 </manifest>
+
